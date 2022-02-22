@@ -1,0 +1,36 @@
+.container{
+    border: 3px solid rgb(44, 44, 44);
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+nav{
+    background-color: burlywood;
+    padding: 30px;
+    border-bottom: 3px solid rgb(44, 44, 44);;
+}
+
+section{
+    margin: 10px;
+    padding: 30px;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: blue;
+}
+
+aside{
+    margin: 10px;
+    padding: 10px;
+    border-style: dotted;
+    border-width: 5px;
+    border-color: red;
+}
+
+footer{
+    margin: 10px;
+    padding: 10px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    position: ;
+}
