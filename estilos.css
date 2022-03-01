@@ -1,36 +1,68 @@
+.heroe{
+    font-size: xx-large;
+    text-align: center;
+    margin: 10%;
+}
+
 .container{
-    border: 3px solid rgb(44, 44, 44);
-    background-color: beige;
     font-family: sans-serif;
+    margin: 1%;
+
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 nav{
-    background-color: burlywood;
-    padding: 30px;
-    border-bottom: 3px solid rgb(44, 44, 44);;
+    background-color: #0042FF;
+    color: white;
+    border: 3px solid rgb(44, 44, 44);
+    width: 100%;
 }
 
-section{
-    margin: 10px;
+.div_1{
+    margin: 3%;
     padding: 30px;
-    border-style: dashed;
-    border-width: 5px;
-    border-color: blue;
+    background-color: skyblue;
+}
+
+.div_2{
+    color: whitesmoke;
+}
+
+table{
+    width: 100%;
+    border-spacing: 10px;
+}
+
+th, td{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:hover{
+    background-color: lightseagreen;
+    color: black;
 }
 
 aside{
-    margin: 10px;
+    margin: 10%;
     padding: 10px;
-    border-style: dotted;
-    border-width: 5px;
-    border-color: red;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+li{
+    list-style-type: none;
 }
 
 footer{
-    margin: 10px;
+    background-color: darkgray;
     padding: 10px;
     border-style: double;
     border-width: 10px;
     border-color: black;
-    position: ;
 }
