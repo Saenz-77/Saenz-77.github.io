@@ -3,27 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="estilos.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA/wAAAP8AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAEPT09/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAAAAAAAAAAAAQ9PT3/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAEAAAABAAAAAQAAAAEAAAABD09Pf8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAA9PT3/AAAABAAAAAQAAAAEAAAABD09Pf8AAAAAPT09/wAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAQ9PT3/AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAPT09/wAAAAQAAAD/AAAA/wAAAAQAAAD/PT09/wAAAAQ9PT3/AAAAAAAAAAAAAAAAPT09/z09Pf8AAAAAAAAAAAAAAAA9PT3/AAAABD09Pf8AAAD/AAAABAAAAP89PT3/AAAAAAAAAAAAAAAAPT09/wAAAAAAAAAAPT09/wAAAAAAAAAEAAAAAD09Pf8AAAD/AAAABAAAAP89PT3/AAAABD09Pf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD09Pf8AAAAEPT09/wAAAP8AAAAEPT09/z09Pf8AAAAAAAAABP+EAP8AAAD/AAAABAAAAAAAAAD//4QA/wAAAAAAAAAAPT09/z09Pf8AAAAEAAAAAAAAAP89PT3/AAAAAAAAAP8AAAD/AAAABAAAAAQAAAAEAAAABAAAAP8AAAD/AAAAAD09Pf8AAAD/AAAABAAAAAAAAAAEPT09/wAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQ9PT3/AAAABAAAAAQAAAAAAAAAAAAAAP89PT3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9PT3/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAABD09Pf8AAAAEPT09/z09Pf89PT3/PT09/wAAAAA9PT3/AAAABAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP89PT3/AAAA/wAAAAAAAAD/AAAA/wAAAAAAAAD/PT09/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAA/n8AAPmfAADzzwAA5+cAAMvTAACX6QAALnQAAJ25AAAv9AAAmZkAAJPJAADf+wAAz/MAANQrAADiRwAA9+8AAA==" rel="icon" type="image/x-icon" />
     <title>Blog personal</title>
 </head>
 <body>
+    <div class="heroe">
+        <p>ALEJANDRO SAENZ</p>
+    </div>
+
+    <nav id="navegacion">
+        <h2>Navegación
+            <button id="hamburger">☰</button>
+        </h2>
+        <ul>
+            <li>Sobre mí</li>
+            <li>Proyectos</li>
+            <li>Intereses</li>
+        </ul>
+     </nav>
+
     <div class="container">
-        <nav>
-            <p>
-                <h1>BLOG</h1> <b>navegación</b>
-                <ul>
-                    <li><a href="#sobre_mi">¿Quién soy?</a></li>
-                    <li><a href="#intereses">Intereses</a></li>
-                </ul>
-            </p>
-        </nav>
+        
+        <div class="div_1">
+            <section id="sobre_mi">
+                <h3>Yo</h3>
+                <p>Mi nombre es <strong>Alejandro Saenz Garzón.</strong> 
+                Soy estudiante de programación en el día y bailarín de noche. 
+                Sí, lo sé. No parece una buena combinación, además que aún no domino a ninguno de los dos. 
+                Pero lo intento y en eso consiste, ir aprendiendo.</p>
+            </section>    
+        </div>
 
-        <section id="sobre_mi">
-            <h1>Sobre mí</h1>
-            <h3>¿Quién soy?</h3>
-            <p>Mi nombre es <strong>Alejandro Saenz Garzón.</strong> Soy estudiante de programación en el día y bailarín de noche. Sí, lo sé, no parece una buena combinación, además que aún no domino a ninguno de los dos. pero en eso consiste, ir aprendiendo. Actualmente tengo 17 años y de esa parte no sabrás más, ni creas que pondré mi fecha de cumpleaños (guiño).</p>
-            <p><img src="alejo.jpg" alt="Imagen mía que jamás verás" width="200"></p>
-        </section>
-
+        <div class="div_2">
+            <span>
+                <table>
+                    <caption>Conocimiento en programación</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>Beginner</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>Beginner</td>
+                        </tr>   
+                    </tbody>
+                </table>
+            </span>
+        </div>
+        
         <aside id="intereses">
             <ul><h2>Mis intereses</h2>
                 <hr/> <li>Programación (es obvio ¿no? porque lo dije arriba).</li> <hr/>
@@ -34,36 +76,7 @@
                 <img src="https://guiauniversitaria.mx/wp-content/uploads/2020/10/10-tipos-de-aprendizaje.-%C2%BFCon-cu%C3%A1les-te-identificas_.jpg" width="500"> <hr/>
                 <li>Actividad física. como bailar o hacer ejercicio. Es algo que disfruto y me beneficia en amplios aspectos.</li> <hr/>
                 <img src="https://tuapppara.com/wp-content/uploads/2019/08/app-para-bailar.jpg" width="500"> <hr/>
-            </ul>
-
-            <table>
-                <caption>Conocimiento en programación</caption>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Beginner</td>
-                    </tr>
-                    <tr>
-                        <td>Python</td>
-                        <td>Beginner</td>
-                    </tr>   
-                </tbody>
-            </table>
-            
+            </ul>            
         </aside>
 
         <footer>
@@ -74,3 +87,4 @@
     <script src=""></script>
 </body>
 </html>
+
