@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
     <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAA/wAAAP8AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAEPT09/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAAAAAAAAAAAAQ9PT3/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAQAAAAEAAAABAAAAAQAAAAEAAAABD09Pf8AAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/PT09/wAAAAA9PT3/AAAABAAAAAQAAAAEAAAABD09Pf8AAAAAPT09/wAAAP8AAAAAAAAAAAAAAAAAAAD/AAAA/wAAAAQ9PT3/AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAPT09/wAAAAQAAAD/AAAA/wAAAAQAAAD/PT09/wAAAAQ9PT3/AAAAAAAAAAAAAAAAPT09/z09Pf8AAAAAAAAAAAAAAAA9PT3/AAAABD09Pf8AAAD/AAAABAAAAP89PT3/AAAAAAAAAAAAAAAAPT09/wAAAAAAAAAAPT09/wAAAAAAAAAEAAAAAD09Pf8AAAD/AAAABAAAAP89PT3/AAAABD09Pf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD09Pf8AAAAEPT09/wAAAP8AAAAEPT09/z09Pf8AAAAAAAAABP+EAP8AAAD/AAAABAAAAAAAAAD//4QA/wAAAAAAAAAAPT09/z09Pf8AAAAEAAAAAAAAAP89PT3/AAAAAAAAAP8AAAD/AAAABAAAAAQAAAAEAAAABAAAAP8AAAD/AAAAAD09Pf8AAAD/AAAABAAAAAAAAAAEPT09/wAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQ9PT3/AAAABAAAAAQAAAAAAAAAAAAAAP89PT3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA9PT3/AAAA/wAAAAAAAAAAAAAAAAAAAAAAAAD/AAAABD09Pf8AAAAEPT09/z09Pf89PT3/PT09/wAAAAA9PT3/AAAABAAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP89PT3/AAAA/wAAAAAAAAD/AAAA/wAAAAAAAAD/PT09/wAAAP8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAAAAAAAAAAAAAAAAAAA/n8AAPmfAADzzwAA5+cAAMvTAACX6QAALnQAAJ25AAAv9AAAmZkAAJPJAADf+wAAz/MAANQrAADiRwAA9+8AAA==" rel="icon" type="image/x-icon" />
     <title>Blog personal</title>
@@ -12,20 +13,18 @@
     </div>
 
     <nav id="navegacion">
-        <h2>Navegación
-            <button id="hamburger">☰</button>
-        </h2>
+        <h2>Navegación</h2>
         <ul>
-            <li>Sobre mí</li>
-            <li>Proyectos</li>
-            <li>Intereses</li>
+            <li><a href="#sobre_mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
         </ul>
-     </nav>
+    </nav>
 
     <div class="container">
         
-        <div class="div_1">
-            <section id="sobre_mi">
+        <div class="div_1" id="sobre_mi">
+            <section>
                 <h3>Yo</h3>
                 <p>Mi nombre es <strong>Alejandro Saenz Garzón.</strong> 
                 Soy estudiante de programación en el día y bailarín de noche. 
@@ -66,16 +65,16 @@
             </span>
         </div>
         
-        <aside id="intereses">
+        <aside>
             <ul><h2>Mis intereses</h2>
                 <hr/> <li>Programación (es obvio ¿no? porque lo dije arriba).</li> <hr/>
-                <img src="https://www.enter.co/wp-content/uploads/2021/02/4401280-768x432.jpg" width="500"> <hr/>
+                <img src="https://www.enter.co/wp-content/uploads/2021/02/4401280-768x432.jpg" class="imgRespon"> <hr/>
                 <li>Tecnología. Me fascina y es aquel universo que más deseo conocer.</li> <hr/>
-                <img src="https://www.eltiempo.com/files/image_640_428/uploads/2019/12/07/5dec47012d257.jpeg" width="500"> <hr/>
+                <img src="https://www.eltiempo.com/files/image_640_428/uploads/2019/12/07/5dec47012d257.jpeg" class="imgRespon"> <hr/>
                 <li>Aprender. No somos nadie si no sabemos nada, el saber es la arma más poderosa.</li> <hr/>
-                <img src="https://guiauniversitaria.mx/wp-content/uploads/2020/10/10-tipos-de-aprendizaje.-%C2%BFCon-cu%C3%A1les-te-identificas_.jpg" width="500"> <hr/>
+                <img src="https://guiauniversitaria.mx/wp-content/uploads/2020/10/10-tipos-de-aprendizaje.-%C2%BFCon-cu%C3%A1les-te-identificas_.jpg" class="imgRespon"> <hr/>
                 <li>Actividad física. como bailar o hacer ejercicio. Es algo que disfruto y me beneficia en amplios aspectos.</li> <hr/>
-                <img src="https://tuapppara.com/wp-content/uploads/2019/08/app-para-bailar.jpg" width="500"> <hr/>
+                <img src="https://tuapppara.com/wp-content/uploads/2019/08/app-para-bailar.jpg" class="imgRespon"> <hr/>
             </ul>            
         </aside>
 
