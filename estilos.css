@@ -1,32 +1,59 @@
+body{
+    background-color: azure;
+    margin: 2px;
+}
+
 .heroe{
     font-size: xx-large;
     text-align: center;
     margin: 10%;
 }
 
+nav{
+    background-color: #0042FF;
+    color: white;
+    border: 3px solid rgb(44, 44, 44);
+    width: 99.5%;
+    
+}
+nav h2{
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+} 
+li a:hover {
+    background-color: #1100aa;
+}
+
 .container{
     font-family: sans-serif;
     margin: 1%;
-
+    
     background-image: url("background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
-nav{
-    background-color: #0042FF;
-    color: white;
-    border: 3px solid rgb(44, 44, 44);
-    width: 100%;
-}
-
 .div_1{
     margin: 3%;
+    margin-top: 6%;
     padding: 30px;
     background-color: skyblue;
 }
-
 .div_2{
     color: whitesmoke;
 }
@@ -49,14 +76,25 @@ tr:hover{
 }
 
 aside{
-    margin: 10%;
+    width: 50%;
+    margin: 5%;
     padding: 10px;
     background-color: aquamarine;
     text-align: center;
 }
 
-li{
-    list-style-type: none;
+.imgRespon{
+    max-width: 100%;
+    height: auto;
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside img{
+    margin-bottom: 5%;
+    
 }
 
 footer{
