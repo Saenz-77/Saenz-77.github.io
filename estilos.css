@@ -1,0 +1,111 @@
+body{
+    background-color: #1c1c1c;
+    margin: 2px;
+}
+
+body p {
+    color: #009FB4;
+}
+
+.heroe{
+    font-size: xx-large;
+    text-align: center;
+    margin: 10%;
+}
+
+nav{
+    background-color: #007282;
+    color: white;
+    border: 3px solid rgb(44, 44, 44);
+    width: 99.5%;
+    
+}
+nav h2{
+    text-align: center;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style-type: none;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+} 
+li a:hover {
+    background-color: #005D69;
+}
+
+.container{
+    font-family: sans-serif;
+    margin: 10%;
+    
+    background-image: url("agujero-azul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.div_1{
+    margin: 3%;
+    margin-top: 6%;
+    padding: 30px;
+    background-color: skyblue;
+}
+.div_2{
+    color: whitesmoke;
+}
+
+table{
+    width: 100%;
+    border-spacing: 10px;
+}
+
+th, td{
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.div_2 span table tr:hover{
+    background-color: #009FB4;
+    color: black;
+}
+
+aside{
+    margin: 3%;
+    padding: 10px;
+    text-align: center;
+}
+.div_2 td:hover{
+    background-color: #009FB4;
+}
+
+.imgRespon{
+    max-width: 100%;
+    height: auto;
+}
+
+aside ul{
+    padding: 0;
+}
+
+aside img{
+    margin-bottom: 5%;
+    
+}
+
+footer{
+    background-color: darkgray;
+    padding: 10px;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+}
