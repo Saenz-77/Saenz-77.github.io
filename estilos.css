@@ -1,6 +1,10 @@
 body{
-    background-color: azure;
+    background-color: #1c1c1c;
     margin: 2px;
+}
+
+body p {
+    color: #009FB4;
 }
 
 .heroe{
@@ -10,7 +14,7 @@ body{
 }
 
 nav{
-    background-color: #0042FF;
+    background-color: #007282;
     color: white;
     border: 3px solid rgb(44, 44, 44);
     width: 99.5%;
@@ -36,14 +40,14 @@ li a {
     text-decoration: none;
 } 
 li a:hover {
-    background-color: #1100aa;
+    background-color: #005D69;
 }
 
 .container{
     font-family: sans-serif;
-    margin: 1%;
+    margin: 10%;
     
-    background-image: url("background.jpg");
+    background-image: url("agujero-azul.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -70,17 +74,18 @@ th, td{
     padding: 5px;
 }
 
-tr:hover{
-    background-color: lightseagreen;
+.div_2 span table tr:hover{
+    background-color: #009FB4;
     color: black;
 }
 
 aside{
-    width: 50%;
-    margin: 5%;
+    margin: 3%;
     padding: 10px;
-    background-color: aquamarine;
     text-align: center;
+}
+.div_2 td:hover{
+    background-color: #009FB4;
 }
 
 .imgRespon{
