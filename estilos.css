@@ -1,111 +1,81 @@
 body{
     background-color: #1c1c1c;
-    margin: 2px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    margin: 0%;
 }
 
-body p {
-    color: #009FB4;
-}
-
-.heroe{
-    font-size: xx-large;
-    text-align: center;
+header{
     margin: 10%;
+}
+header p{
+    height: 20vh;
+    color: #009FB4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 5em;
 }
 
 nav{
-    background-color: #007282;
-    color: white;
-    border: 3px solid rgb(44, 44, 44);
-    width: 99.5%;
-    
+    background-color: #009FB4; 
+    height: 60px ;
 }
-nav h2{
-    text-align: center;
-}
-
 nav ul{
+    color: #fff;
+    width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
-}
-
-li{
-    list-style-type: none;
-}
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    text-decoration: none;
-} 
-li a:hover {
-    background-color: #005D69;
-}
-
-.container{
-    font-family: sans-serif;
-    margin: 10%;
+    align-content: center;
     
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.item_nav{
+    text-align: center;
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+section{
+    width: 100%;
+}
+.mi{
+    background-color: #00b4cc;
+    color: #fff;
+    padding: 10%;
+    text-align: justify;
+}
+.mi p{
+    color: #fff;
+}
+.mi ul{
+    list-style: none;
+}
+.proyectos{
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 10%;
+    text-align: justify;
+}
+.proyectos p{
+    color: #fff;
+}
+.contacto{
+    background-color: #fff;
+    color: #111;
+    padding: 10%;
+    text-align: justify;
+}
+/* .container{    
+    width: 100%;
+    height: auto;
     background-image: url("agujero-azul.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
-}
-.div_1{
-    margin: 3%;
-    margin-top: 6%;
-    padding: 30px;
-    background-color: skyblue;
-}
-.div_2{
-    color: whitesmoke;
-}
-
-table{
-    width: 100%;
-    border-spacing: 10px;
-}
-
-th, td{
-    border: 1px solid white;
-    border-radius: 5px;
-    text-align: center;
-    padding: 5px;
-}
-
-.div_2 span table tr:hover{
-    background-color: #009FB4;
-    color: black;
-}
-
-aside{
-    margin: 3%;
-    padding: 10px;
-    text-align: center;
-}
-.div_2 td:hover{
-    background-color: #009FB4;
-}
-
-.imgRespon{
-    max-width: 100%;
-    height: auto;
-}
-
-aside ul{
-    padding: 0;
-}
-
-aside img{
-    margin-bottom: 5%;
-    
-}
-
-footer{
-    background-color: darkgray;
-    padding: 10px;
-    border-style: double;
-    border-width: 10px;
-    border-color: black;
-}
+} */
