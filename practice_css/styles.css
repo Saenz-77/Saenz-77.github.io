@@ -1,0 +1,212 @@
+body{margin: 0;}
+
+/*----- TRANSFORM -----*/
+.transform{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+/*----- TRANSLATE -----*/
+.translate{
+    background-color: lightblue;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 1s;
+}
+.translate:hover{
+    transform: translate(20px, 20px);
+    transition: transform 1s;
+}
+
+/*----- SCALE -----*/
+.scale{
+    background-color: lightgreen;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 1s;
+}
+.scale:hover{
+    transform: scale(1.2);
+    transition: transform 1s;
+}
+
+/*----- SKEW -----*/
+.skew{
+    background-color: lightpink;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 1s;
+}
+.skew:hover{
+    transform: skew(20deg);
+    transition: transform 1s;
+}
+
+/*----- ROTATE -----*/
+.rotate, .rotate2{
+    background-color: lightslategray;
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rotate{
+    transition: transform 1s;
+}
+.rotate:hover{
+    transform: rotate(90deg); /*En degrees y radians*/
+    transition: transform 1s;
+}
+
+/*----- TRANSFOR-ORIGIN -----*/
+.rotate_origin{
+    transition: transform 1s linear;
+    transform-origin: right top;
+}
+.rotate_origin:hover{
+    transform-origin: right top;
+    transform: rotate(-180deg);
+    transition: transform 1s linear;
+
+    transition-delay: 1s;
+}
+
+/*----- PERSPECTIVE -----*/
+.perspectiva{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ffee02;
+    border-radius: 20%;
+    
+    display: flex;
+    align-items: center;
+    perspective: 100px;
+}
+.objeto{
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background-color: #ff0000;
+
+    transform-style: preserve-3d; /*Para que el objeto se mueva en 3D*/
+    transform: rotate3d(1, 0, 0, 30deg);
+}
+
+/*----- BACKFACE VISIBILITY -----*/
+.carta{
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d; 
+    position: relative;
+    transition: transform 2s;
+}
+.carta:hover{
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    transition-delay: 1s;
+}
+.cara{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.cara.frontal{
+    background-color: lightsalmon;
+}
+.cara.detras{
+    background-color: lightskyblue;
+    transform: rotateX(-180deg);
+}
+
+/*----- TRANSITION -----*/
+.transition{
+    background-color: lightgoldenrodyellow;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.transition:hover .box{
+    transform: scale(1.2);
+}
+.box{
+    background-color: lemonchiffon;
+    width: 100px;
+    height: 100px;
+}
+.box1{
+    background-color: lightcoral;
+    transition: transform 1s;
+}
+.box2{
+    background-color: lightpink;
+    transition: transform 500ms;
+}
+.box3{
+    background-color: lightblue;
+    transition: transform 100ms;
+}
+
+/*----- TRANSITION TIMING FUNCTION Y DELAY -----*/
+.time:hover .velocity{
+    transform: translateX(calc(100vh - 100px));
+}
+.velocity{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.x1{
+    background-color: lightblue;
+    transition: transform 1s linear;
+    transition-delay: 500ms;
+}
+.x2{
+    background-color: lightcoral;
+    transition: transform 1s ease;
+    transition-delay: 500ms;
+}
+.x3{
+    background-color: lightgoldenrodyellow;
+    transition: transform 1s ease-in;
+    transition-delay: 500ms;
+}
+.x4{
+    background-color: lightyellow;
+    transition: transform 1s ease-out;
+    transition-delay: 500ms;
+}
+.x5{
+    background-color: lightfuchsia;
+    transition: transform 1s ease-in-out;
+    transition-delay: 500ms;
+}
+.x6{
+    background-color: lightgreen;
+    transition: transform 1s cubic-bezier(0,.73,1,.23);
+    transition-delay: 500ms;
+}

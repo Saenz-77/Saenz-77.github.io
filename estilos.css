@@ -32,6 +32,12 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+nav ul li:hover{
+    transform: scale(1.2);
+}
+nav ul li:nth-child(4){
+    width: 90%;
+}
 .item_nav{
     text-align: center;
     list-style: none;
