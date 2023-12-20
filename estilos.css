@@ -14,7 +14,7 @@ header p{
     align-items: center;
     justify-content: center;
     font-weight: bolder;
-    font-size: 5em;
+    font-size: 3.5em;
 }
 
 nav{
@@ -70,10 +70,6 @@ section{
 .proyectos p{
     color: #fff;
 }
-.slider_pc{
-    display: flex;
-    height: 400px;
-}
 .slider_pc img{
     width: 0px;
     flex-grow: 1;
@@ -87,26 +83,72 @@ section{
     width: 200px;
     filter: contrast(1.1);
 }
-.slider_mobile{
-    position: relative;
+
+/* ------------------- */
+.enlaces_pc {
     display: flex;
-    overflow: scroll;
-    scroll-snap-type: x mandatory;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
-.slider_mobile img{
+.boton_enlace {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    position: relative;
+}
+.boton_enlace button {
+    width: 15em;
+    height: 15em;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+.boton_enlace button span {
+    position: absolute;
     width: 100%;
     left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
+    bottom: 0;
+    padding: 10px 0;
+    background: transparent;
+    color: transparent;
+    font-size: 1.2em;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Transición suave para el fondo */
 }
+.boton_enlace button:hover {
+    transform: scale(1.05);
+}
+.boton_enlace button:hover span {
+    color: white;
+    background-color: rgba(0, 123, 255, 0.9);
+}
+/* Estilos adicionales para los botones */
+.boton_enlace button:focus {
+    outline: none; /* Elimina el outline cuando está enfocado */
+}
+
+/* Estilos para dispositivos táctiles*/
+@media (hover: none) {
+    .boton_enlace button:hover {
+        transform: none;
+    }
+    
+    .boton_enlace button:hover span {
+        color: white;
+        background-color: rgba(0, 123, 255, 0.9);
+    }
+}
+/* ------------------- */
 
 .contacto{
     background-color: #fff;
     color: #111;
     padding: 10%;
-    text-align: justify;
+    text-align: center;
 }
 /* .container{    
     width: 100%;
@@ -119,12 +161,11 @@ section{
 } */
 
 @media screen and (max-width: 600px){
-    .slider_pc{
-        display: none;
-    }
+    
 }
 @media screen and (min-width: 600px){
-    .slider_mobile{
-        display: none;
+    .boton_enlace button {
+        width: 25em;
+        height: 25em;
     }
 }
