@@ -86,18 +86,21 @@ section{
 
 /* ------------------- */
 .enlaces_pc {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    height: 350px;
+    justify-items: center;
 }
 .boton_enlace {
     text-decoration: none; /* Elimina el subrayado de los enlaces */
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 .boton_enlace button {
-    width: 15em;
-    height: 15em;
+    width: 100%;
+    height: 100%;
     padding: 0;
     background-size: cover;
     background-position: center;
@@ -136,8 +139,7 @@ section{
     .boton_enlace button:hover {
         transform: none;
     }
-    
-    .boton_enlace button:hover span {
+    .boton_enlace button span {
         color: white;
         background-color: rgba(0, 123, 255, 0.9);
     }
@@ -160,12 +162,19 @@ section{
     background-attachment: fixed;
 } */
 
+@media screen and (max-width: 425px){
+    
+}
+
 @media screen and (max-width: 600px){
     
 }
-@media screen and (min-width: 600px){
-    .boton_enlace button {
+@media screen and (min-width: 515px){
+    /* .boton_enlace button {
         width: 25em;
         height: 25em;
+    } */
+    .enlaces_pc {
+        grid-template-columns: 1fr 1fr;
     }
 }
