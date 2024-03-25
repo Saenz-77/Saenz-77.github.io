@@ -2,73 +2,54 @@ body{
     background-color: #1c1c1c;
     font-family: 'Montserrat Alternates', sans-serif;
     margin: 0%;
+    color: #fff;
 }
 
 header{
-    margin: 10%;
-}
-header p{
-    height: 20vh;
-    color: #009FB4;
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
+    height: 300px;
+}
+header p{
+    color: #009FB4;
     font-weight: bolder;
     font-size: 3.5em;
-}
-
-nav{
-    background-color: #009FB4; 
-    height: 60px ;
-}
-nav ul{
-    color: #fff;
-    width: 100%;
-    height: 100%;
-    padding: 0;
     margin: 0;
-    align-content: center;
-    
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-nav ul li:hover{
+.nav{
+    display: flex;
+    background-color: #009FB4;
+    height: 60px;
+    font-size: 1.5em;
+    
+    align-items: center;
+    justify-content: center;
+}
+.nav p{
+    width: max-content;
+}
+.nav p:hover{
     transform: scale(1.2);
 }
-nav ul li:nth-child(4){
-    width: 90%;
-}
-.item_nav{
-    text-align: center;
-    list-style: none;
-}
-nav ul li a{
-    text-decoration: none;
-    color: #fff;
-}
+
 section{
     width: 100%;
+    font-size: 1.5em;
 }
 .mi{
     background-color: #00b4cc;
-    color: #fff;
-    padding: 10%;
+    padding: 5% 10%;
     text-align: justify;
-}
-.mi p{
-    color: #fff;
 }
 .mi ul{
     list-style: none;
 }
 .proyectos{
     background-color: #1c1c1c;
-    color: #fff;
-    padding: 10%;
+    padding: 5% 10%;
     text-align: justify;
-}
-.proyectos p{
-    color: #fff;
 }
 .slider_pc img{
     width: 0px;
@@ -89,7 +70,7 @@ section{
     display: grid;
     grid-gap: 20px;
     width: 100%;
-    height: 350px;
+    height: 700px;
     justify-items: center;
 }
 .boton_enlace {
@@ -144,7 +125,6 @@ section{
         background-color: rgba(0, 123, 255, 0.9);
     }
 }
-/* ------------------- */
 
 .contacto{
     background-color: #fff;
@@ -152,28 +132,13 @@ section{
     padding: 10%;
     text-align: center;
 }
-/* .container{    
-    width: 100%;
-    height: auto;
-    background-image: url("agujero-azul.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-} */
-
-@media screen and (max-width: 425px){
-    
-}
 
 @media screen and (max-width: 600px){
-    
+    section {
+        font-size: 1em;
+    }
 }
 @media screen and (min-width: 515px){
-    /* .boton_enlace button {
-        width: 25em;
-        height: 25em;
-    } */
     .enlaces_pc {
         grid-template-columns: 1fr 1fr;
     }
